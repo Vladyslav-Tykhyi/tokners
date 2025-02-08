@@ -2,126 +2,150 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/assets/favicon-BUivPTPJ.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Tokners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Farro:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-DN5cZKux.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
+    <header class="header" id="header">
+  <div class="header-container container">
+    <a href="/index.html" class="header-logo"
+      ><img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAZCAMAAABAf11LAAAA8FBMVEUAAAAMk9MLk9IQeEDhBhQTe8DiBhPiBRPiBxMPdkDiCBPnCBDiBhMUfL8QeEDfCBjiBhMOdj/iBhQTe8AOdkALkdEOd0ATe7/UDx8Te7/jCBQQd0AQgL8QeEDfCRgeglkOdj8UfMAOdj8Ue8APd0DhBxMTesDiBxMOd0DhBxMSfL8TfL8QeUDiBhMVer/fCxUIj88ggL/iBhMOdj8LktITe8AOS5z/0QAScLgSeqwQXqsPUaEbR5MReY8QeG94LFoPd08sgTelrxgqmrcSeqBIoZ1DOnp2rXcPd2CjuU8OdketFzbHDyTVCxvhyRrDuhCrBa3aAAAAMnRSTlMAQL9AgO/fYL9gYCCfQCAg79/Pv7Cgn5B4cEAwEBAQ7+/Pz7+/sK+vkJCAUFBQMDAgELIao/sAAAE+SURBVDjLjZHZUsJAEEUbMEiEIJsCKrjve3AmKii47/r/f2Mm3T1MmFQq9y1d99Q9SSBb5uco5YxA0ccUM/ZPfUolI1BhYCUjUEs1Wi1QevqV0402BpjJEV/2U43cAeXeoUvfTzVqMXAjvBmjw6R+lfsTIZp4KjFwrp5ynFmjOyHEmbosxo2WrihEbGmjEGjHjDqgcsFAHr8p999FGOfSNCpDwsTy1Eilaxg1AJOLTdSp/ymiNA2jBaDkjYmC/gkC40HDMLIntNEzAXvaqARgT/S4X98kwOkYRvaEy8BBV1DGhpE9sc5Adc3B/vXIMLImnv6ovwPQRuBWfmkje+IteEDABfAQGMpXBPqQMPEbPJIRAGxHRlLKb9XfBbAnXoIAJ1rqdIxGUo7JyJ74CAKcOFGn6LWHITD68f0acP4Bllp2Y9xpZTcAAAAASUVORK5CYII="
+        width="47"
+        height="30"
+        alt="W_logo"
+        loading="lazy"
+      /><span class="logo-text">Tokners</span></a
+    >
+    <button class="burger-open">
+      <svg width="24" height="24" class="burger">
+        <use href="/vanilla-app-template/assets/icons-C3BRB53i.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- //!Burger menu -->
+
+  <div class="mob-menu">
+    <div class="mob-container">
+      <button type="button" class="burger-close-btn">
+        <svg width="24" height="24" class="burger">
+          <use href="/vanilla-app-template/assets/icons-C3BRB53i.svg#icon-closing-icon"></use>
         </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+      </button>
+      <ul class="user-actions">
+        <li class="user-action-item user-signin">
+          <button class="btn-signin" type="button">Sign In</button>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="user-action-item user-signup">
+          <button class="btn-signup" type="button">Sign Up</button>
         </li>
       </ul>
-    </nav>
+
+      <ul class="burger-nav-menu">
+        <li class="burger-menu-item">
+          <a href="#" class="burger-item-link">Our team</a>
+        </li>
+        <li class="burger-menu-item">
+          <a href="#" class="burger-item-link">Tokens</a>
+        </li>
+        <li class="burger-menu-item">
+          <a href="#" class="burger-item-link">Connect wallet</a>
+        </li>
+        <li class="burger-menu-item">
+          <a href="#" class="burger-item-link">Lightpaper</a>
+        </li>
+      </ul>
+      <div class="burger-footer">
+        <a href="/index.html" class="burger-logo"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAZCAMAAABAf11LAAAA8FBMVEUAAAAMk9MLk9IQeEDhBhQTe8DiBhPiBRPiBxMPdkDiCBPnCBDiBhMUfL8QeEDfCBjiBhMOdj/iBhQTe8AOdkALkdEOd0ATe7/UDx8Te7/jCBQQd0AQgL8QeEDfCRgeglkOdj8UfMAOdj8Ue8APd0DhBxMTesDiBxMOd0DhBxMSfL8TfL8QeUDiBhMVer/fCxUIj88ggL/iBhMOdj8LktITe8AOS5z/0QAScLgSeqwQXqsPUaEbR5MReY8QeG94LFoPd08sgTelrxgqmrcSeqBIoZ1DOnp2rXcPd2CjuU8OdketFzbHDyTVCxvhyRrDuhCrBa3aAAAAMnRSTlMAQL9AgO/fYL9gYCCfQCAg79/Pv7Cgn5B4cEAwEBAQ7+/Pz7+/sK+vkJCAUFBQMDAgELIao/sAAAE+SURBVDjLjZHZUsJAEEUbMEiEIJsCKrjve3AmKii47/r/f2Mm3T1MmFQq9y1d99Q9SSBb5uco5YxA0ccUM/ZPfUolI1BhYCUjUEs1Wi1QevqV0402BpjJEV/2U43cAeXeoUvfTzVqMXAjvBmjw6R+lfsTIZp4KjFwrp5ynFmjOyHEmbosxo2WrihEbGmjEGjHjDqgcsFAHr8p999FGOfSNCpDwsTy1Eilaxg1AJOLTdSp/ymiNA2jBaDkjYmC/gkC40HDMLIntNEzAXvaqARgT/S4X98kwOkYRvaEy8BBV1DGhpE9sc5Adc3B/vXIMLImnv6ovwPQRuBWfmkje+IteEDABfAQGMpXBPqQMPEbPJIRAGxHRlLKb9XfBbAnXoIAJ1rqdIxGUo7JyJ74CAKcOFGn6LWHITD68f0acP4Bllp2Y9xpZTcAAAAASUVORK5CYII="
+            width="47"
+            height="30"
+            alt="W_logo"
+          /><span class="logo-text">Tokners</span></a
+        >
+        <ul class="burger-media">
+          <li class="burger-media-item">
+            <a href="#" class="burger-media-link">
+              <svg width="20" height="20" class="burger-social-icon">
+                <use href="/vanilla-app-template/assets/icons-C3BRB53i.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-media-item">
+            <a href="#" class="burger-media-link">
+              <svg width="20" height="20" class="burger-social-icon">
+                <use href="/vanilla-app-template/assets/icons-C3BRB53i.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-media-item">
+            <a href="#" class="burger-media-link">
+              <svg width="20" height="20" class="burger-social-icon">
+                <use href="/vanilla-app-template/assets/icons-C3BRB53i.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-media-item">
+            <a href="#" class="burger-media-link">
+              <svg width="20" height="20" class="burger-social-icon">
+                <use href="/vanilla-app-template/assets/icons-C3BRB53i.svg#icon-m"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-media-item">
+            <a
+              href="https://github.com/Vladyslav-Tykhyi/tokners"
+              target="_blank"
+              class="burger-media-link"
+            >
+              <svg width="20" height="20" class="burger-social-icon">
+                <use href="/vanilla-app-template/assets/icons-C3BRB53i.svg#icon-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="burger-media-item">
+            <a href="#" class="burger-media-link">
+              <svg width="20" height="20" class="burger-social-icon">
+                <use href="/vanilla-app-template/assets/icons-C3BRB53i.svg#icon-reddit-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="burger-author">
+          <li class="burger-author-rights">
+            <a href="#" class="burger-rights-link"
+              >&#169; 2021 Tokners. All rights reserved.</a
+            >
+          </li>
+          <li class="burger-author-rights created-by">Design by Oleg Kulik</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
 
+    <main></main>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
+    <footer class="footer"></footer>
 
 
   </body>
