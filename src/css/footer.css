@@ -1,0 +1,26 @@
+.footer {
+  padding: 40px 0;
+}
+.burger-author {
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-container .burger-media,
+  .footer-container .burger-author {
+    margin: 0;
+  }
+  .footer .burger-author {
+    align-items: end;
+  }
+  .footer .container {
+    max-width: 95%;
+  }
+}

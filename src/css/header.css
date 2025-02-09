@@ -127,8 +127,8 @@
 .burger-media-item {
   border: 2px solid rgba(255, 255, 255, 0.05);
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,4 +174,56 @@
   height: 22px;
   width: 22px;
   margin: 0 4px 0 0;
+}
+
+/*!  laptop screen */
+.nav-wrapper {
+  display: none;
+}
+@media screen and (min-width: 1240px) {
+  /* .header .header-container {
+    padding: 40px;
+  } */
+  .header-container {
+    justify-content: start;
+    align-items: center;
+  }
+  .burger-open {
+    display: none;
+  }
+  .nav-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .nav-list {
+    margin: 0 0 0 80px;
+    display: flex;
+    gap: 30px;
+  }
+  .nav-list-item {
+  }
+  .nav-item-link {
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+  }
+  .nav-btn-list {
+    display: flex;
+    gap: 30px;
+  }
+  .nav-sign-btn {
+  }
+  .nav-btn-item {
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+  }
+  .signin-page {
+  }
+  .signup-page {
+    border: 2px solid #22a75d;
+    border-radius: 52px;
+    padding: 15px 50px;
+  }
 }
