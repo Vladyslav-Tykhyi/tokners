@@ -30,6 +30,12 @@
 
 /*! mob-menu */
 
+.mob-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
 .mob-menu {
   position: fixed;
   top: 0;
@@ -43,19 +49,13 @@
   transition: transform 250ms ease-in-out;
   z-index: 1000;
   background: linear-gradient(to bottom, #0f1320, #1a2235, #27304a, #344060);
+  z-index: 9999;
 }
 
 .mob-container {
   height: 100%;
   width: 100%;
   padding: 60px 40px 0;
-}
-
-.mob-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateX(0);
 }
 
 .burger-close-btn {
